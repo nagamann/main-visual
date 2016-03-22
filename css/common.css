@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+div.mainVisual{
+	/*真ん中表示*/
+    background-image: url(../images/mainVisual.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*高さ指定*/
+    height: 403px;
+}
+/*テキスト*/
+div.mainVisual > div > div.maintext {
+    /*文字中央揃え*/
+    margin: 0 auto;
+    display: table;
+}
+
+@media (min-width: 768px){
+div.mainVisual > div > div.maintext {
+    height: 403px;
+    width: 970px;
+}
+}
+
+@media (max-width: 768px){
+div.mainVisual > div > div.maintext {
+    height: 200px;
+    width: 95%;
+}
+}
